@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: 260120_docker-spring-db
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:shop}
+    username: ${DB_USER:root}
+    password: ${DB_PASS:root_pass}
+  jpa:
+    hibernate:
+      ddl-auto: update
